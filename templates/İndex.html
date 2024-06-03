@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PatiliDükkan</title>
+    <link rel="stylesheet" href="static\css\style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <div class="logo-container">
+                    <a href="{{ url_for('index') }}">
+                        <img src="static/images/logodenemeeee.png" alt="Logo">
+                    </a>
+                </div>
+            </div>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Ana Sayfa</a></li>
+                <li><a href="{{ url_for('hakkimizda') }}">Hakkımızda</a></li>
+                <li><a href="{{ url_for('hizmetler') }}">Hizmetler</a></li>
+                <li><a href="{{ url_for('urunler') }}">Ürünler</a></li>
+                <li><a href="{{ url_for('iletisim') }}">İletişim</a></li>
+            </ul>
+        </div>
+        <div class="center">
+            <h1>Patili Dükkan'a</h1>
+            <h2>Hoş geldiniz</h2>
+            <div class="buttons">
+               <a href="{{ url_for('hizmetler') }}"><button >Hizmetler</button></a>
+                <a href="https://www.instagram.com/shitposteran361/"><button>Bizleri Takip et</button></a>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <footer>
+        <p>Author: Erhan Küçüktopana<br>
+        <a href="mailto:hege@example.com">erhan.kucuktopana@gmail.com</a></p>
+      </footer>
+</body>
+
+</html>

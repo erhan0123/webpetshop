@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PatiliDükkan</title>
+    <link rel="stylesheet" href="static\css\style3.css">
+</head>
+
+<body>
+ <div>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <div class="logo-container">
+                    <a href="{{ url_for('index') }}">
+                        <img src="\static\images\logodenemeeee.png" alt="Logo">
+                    </a>
+                </div>
+            </div>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Ana Sayfa</a></li>
+                <li><a href="{{ url_for('hakkimizda') }}">Hakkımızda</a></li>
+                <li><a href="{{ url_for('hizmetler') }}">Hizmetler</a></li>
+                <li><a href="{{ url_for('urunler') }}">Ürünler</a></li>
+                <li><a href="{{ url_for('iletisim') }}">İletişim</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <h1>Mikroçip Uygulaması </h1>
+    <p>Yurtdışı çıkışlarında gerekli olan, uluslararası kimliği belirleyen ve dünyanın her yerinde okunabilen (RFID) çipler kliniğimizde uygulanmaktadır.    </p>
+
+    <img src="static/images/9.jpg" alt="Patili dostlarımızın muayenesi" width="600">
+    <img src="static/images/10.jpg" alt="Patili dostlarımızın muayenesi" width="600">
+   
+</body>
+</html>

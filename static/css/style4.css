@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container .navbar {
+  width: 100%;
+  height: 80px;
+  background: rgba(216, 90, 17);
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  background: rgba(216, 90, 17);
+}
+.navbar .logo {
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.navbar ul {
+  float: right;
+  margin-right: 20px;
+}
+
+.navbar .logo a {
+  text-decoration: none;
+  font-size: 30px;
+  font-family: sans-serif;
+  color: #f3f3f3;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 8px;
+  line-height: 80px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 6px 13px;
+  font-family: Roboto, sans-serif;
+  transition: 0.5s;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+  background: rgb(13, 120, 124);
+  border-radius: 2px;
+}
+
+.container .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: sans-serif;
+  user-select: none;
+}
+
+.center h1 {
+  color: rgb(216, 90, 17);
+  font-size: 70px;
+  font-weight: bold;
+  width: 900px;
+  text-align: center;
+}
+
+.center h2 {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  width: 885px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.center .buttons {
+  margin: 35px 280px;
+}
+
+.buttons button {
+  height: 50px;
+  width: 150px;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  background-color: rgb(13, 120, 124);
+  border: solid 1px rgb(13, 73, 75);
+  cursor: pointer;
+  outline: none;
+  border-radius: 25px;
+  transition: 0.5s;
+}
+
+.buttons button:hover {
+  background: #fff;
+}
+
+.logo-container {
+  position: absolute;
+  /* Logoyu sabit konumda tutmak için */
+  top: 0;
+  /* Sayfanın üstünde */
+  left: 0;
+  /* Sayfanın solunda */
+  padding: 0px;
+  /* Logonun kenarlarında biraz boşluk bırakmak için */
+  background-color: fixed;
+  /* Logo arka planını beyaz yarı saydamlıkta yapmak için */
+}
+
+.logo-container img {
+  max-width: 200px;
+  /* Logo genişliğini ayarlamak için */
+  height: 80px;
+  /* Orantılı olarak yüksekliği ayarlamak için */
+}
+
+a {
+  text-decoration: none;
+  /* Bağlantı altını çizgisini kaldırır */
+  color: inherit;
+  /* Bağlantı rengini varsayılan yapar */
+}
+
+/* Ürünler için stil */
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.product {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  width: 300px;
+  background-color: #f9f9f9;
+}
+
+.product img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.product h2 {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.product p {
+  font-size: 16px;
+  color: #333;
+}
+
+.product .add-to-cart {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: rgba(216, 90, 17);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product .add-to-cart:hover {
+  background-color: rgba(216, 90, 17, 0.8);
+}
+
+/* Sepet stili */
+
+.cart {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  width: 300px;
+  background-color: #f9f9f9;
+}
+
+.cart h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.cart .cart-items {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cart .cart-items li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.cart .checkout {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  color: white;
+  background-color: rgba(13, 120, 124);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cart .checkout:hover {
+  background-color: rgba(13, 120, 124, 0.8);
+}
+
+.blogs {
+  display: flex;
+  margin: auto;
+  text-align: center;
+}
+
+.blogs .blog-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.blogs .blog-list .product {
+  list-style-type: none;
+}
+
+.blogs .blog-item img {
+  border: 3px solid orange;
+  border-radius: 25%;
+}
+
+.blog-list .product img {
+  height: 250px;
+  width: 300px;
+}
+
+.blog-list .product {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  /* İki sütun oluştur */
+  gap: 10px;
+}
+.order-form {
+  position:absolute;
+  top: 450px;
+  right: 400px;
+  width: 400px; /* Genişliği artırmak */
+  padding: 40px; /* Dolguyu artırmak */
+  border: 3px solid #ddd; /* Kenarlığı kalınlaştırmak */
+  border-radius: 20px; /* Köşeleri daha fazla yuvarlatmak */
+  background-color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Gölgeyi artırmak */
+  z-index: 9999;
+  font-size: 20px; /* Yazı boyutunu daha büyük yapmak */
+  line-height: 1.8; /* Satır yüksekliğini artırmak */
+}
+
+.order-form label {
+  font-weight: bold;
+  margin-bottom: 15px; /* Etiketler arası boşluğu artırmak */
+}
+
+.order-form select,
+.order-form button {
+  font-size: 20px;
+  padding: 12px 24px; /* Seçim kutuları ve düğmelerin dolgusunu artırmak */
+}
+
+.order-form button {
+  margin-top: 25px; /* Düğmeyi etiketlerden biraz daha uzaklaştırmak */
+}
+
+
+
+
+
+
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  background: rgba(216, 90, 17);
+}

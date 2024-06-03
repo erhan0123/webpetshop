@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container .navbar {
+  width: 100%;
+  height: 80px;
+  background: rgba(216, 90, 17);
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  background: rgba(216, 90, 17);
+}
+.navbar .logo {
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.navbar ul {
+  float: right;
+  margin-right: 20px;
+}
+
+.navbar .logo a {
+  text-decoration: none;
+  font-size: 30px;
+  font-family: sans-serif;
+  color: #f3f3f3;
+}
+
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 8px;
+  line-height: 80px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 6px 13px;
+  font-family: Roboto, sans-serif;
+  transition: 0.5s;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+  background: rgb(13, 120, 124);
+  border-radius: 2px;
+}
+
+.container .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: sans-serif;
+  user-select: none;
+}
+
+.center h1 {
+  color: rgb(216, 90, 17);
+  font-size: 70px;
+  font-weight: bold;
+  width: 900px;
+  text-align: center;
+}
+
+.center h2 {
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  width: 885px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.center .buttons {
+  margin: 35px 280px;
+}
+
+.buttons button {
+  height: 50px;
+  width: 150px;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  background-color: rgb(13, 120, 124);
+  border: solid 1px rgb(13, 73, 75);
+  cursor: pointer;
+  outline: none;
+  border-radius: 25px;
+  transition: 0.5s;
+}
+
+.buttons button:hover {
+  background: #fff;
+}
+
+.logo-container {
+  position: absolute;
+  /* Logoyu sabit konumda tutmak için */
+  top: 0;
+  /* Sayfanın üstünde */
+  left: 0;
+  /* Sayfanın solunda */
+  padding: 0px;
+  /* Logonun kenarlarında biraz boşluk bırakmak için */
+  background-color: fixed;
+  /* Logo arka planını beyaz yarı saydamlıkta yapmak için */
+}
+
+.logo-container img {
+  max-width: 200px;
+  /* Logo genişliğini ayarlamak için */
+  height: 80px;
+  /* Orantılı olarak yüksekliği ayarlamak için */
+}
+
+a {
+  text-decoration: none;
+  /* Bağlantı altını çizgisini kaldırır */
+  color: inherit;
+  /* Bağlantı rengini varsayılan yapar */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.menu {
+  background-color: rgb(216, 90, 17);
+  width: 187px;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 10px;
+}
+
+.menu ul li {
+  border-bottom: 1px solid #ccc;
+}
+
+.menu ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #fffcfc;
+}
+
+.menu ul li:hover a {
+  background-color: rgb(107, 40, 40);
+}
+
+.menu ul li:first-child a {
+  font-weight: bold;
+}
+
+.Başlikismi {
+  text-decoration: none;
+  font-size: 35px;
+  font-family: sans-serif;
+  color: #c75e21;
+  position: fixed;
+  top: 80px;
+  left: 500px;
+  /* Sağa değil, sola doğru kaydırma */
+  position: absolute;
+}
+
+/*Hizmetler kısmını doldurma yeri*/
+
+.text-container2 {
+  text-align:var;
+  /* Metni ortalamak için */
+  margin-bottom: -300px;
+}
+
+.text-container h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.text-container2 p {
+  font-size: 18px;
+  color: #000000;
+  width: 40%;
+  padding: 70px;
+  border: 1px solid #b95527;
+  border-radius: 10px;
+  padding-left: 250;
+}
+
+
+
+.container .menu {
+  position: absolute;
+  right: 400px;
+  top: 80px;
+}
+
+.uygulamalar .content2 {
+  position: absolute;
+  left: 220px;
+  top: 20px;
+}
+
+
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:wght@100..900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.menu {
+  width: 187px;
+  background-color: rgba(216, 90, 17);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: auto; /* Eğer menü yüksekliği sayfa boyunu aşarsa kaydırma çubuğu ekle */
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu li {
+  padding: 10px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+}
+
+.menu a:hover {
+  background-color: rgb(13, 120, 124);
+}
+
+
+
+
+/* foto için alan */
+
+
+
+
+.foto-galeri {
+    display: flex;
+    flex-direction: column;
+}
+
+.foto-satir {
+    display: flex;
+    justify-content: flex-end; /* Fotoğrafları sağ tarafa hizalar */
+    margin-bottom: 10px; /* Satırlar arasına boşluk ekler */
+}
+
+.foto-cerceve {
+    width:700px;
+    border: 2px solid #ccc;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding-right:500px; /* Fotoğrafı sola kaydırır */
+
+}
+
+.foto-cerceve img {
+    max-width: 550px; /* Fotoğrafın maksimum genişliğini ayarlar */
+    max-height: 2000px; /* Fotoğrafın maksimum yüksekliğini ayarlar */
+    width: auto; /* Fotoğrafın genişliğini otomatik olarak ayarlar */
+    height: auto; /* Fotoğrafın yüksekliğini otomatik olarak ayarlar */
+    display: block;
+}
+
+
+
+
+
+
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  background: rgba(216, 90, 17);
+}

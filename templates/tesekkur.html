@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teşekkür</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+<div class="container" style="text-align: center;">
+   <p style="margin-bottom: 400px;">a</p>
+
+    <p style="color:  white; font-size: 36px; margin-top: 50px;">Teşekkürler <br>Siparişiniz alınmıştır. Aşağıda verdiğiniz bilgileri görebilirsiniz:</p>
+    <ul style="color: white; font-size: 20px; list-style: none; padding: 0;">
+        <li><strong>Ad Soyad:</strong> {{ name }}</li>
+        <li><strong>Email:</strong> {{ email }}</li>
+        <li><strong>Adres:</strong> {{ address }}</li>
+        <li><strong>Kredi Kartı Numarası:</strong> {{ credit_card }}</li>
+        <li><strong>CVV:</strong> {{ cvv }}</li>
+        <li><strong>Son Kullanma Tarihi:</strong> {{ expiry }}</li>
+        <li><strong>3D Secure:</strong> {% if secure %}Aktif{% else %}Değil{% endif %}</li>
+    </ul>
+    <!-- Ana sayfaya dön bağlantısı -->
+    <button><a href="/" style="color: rgb(0, 0, 0); font-size: 20px; text-decoration: none; display: block; margin-top: 0px;">Ana Sayfaya <br> Geri Dön</a></button>
+</div>
+
+</body>
+</html>

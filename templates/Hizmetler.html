@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PatiliDükkan</title>
+    <link rel="stylesheet" href="static/css/style3.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <div class="logo-container">
+                    <a href="{{ url_for('index') }}">
+                        <img src="static\images\logodenemeeee.png" alt="Logo">
+                    </a>
+                </div>
+            </div>
+            <ul>
+                <li><a href="{{ url_for('index') }}">Ana Sayfa</a></li>
+                <li><a href="{{ url_for('hakkimizda') }}">Hakkımızda</a></li>
+                <li><a href="{{ url_for('hizmetler') }}">Hizmetler</a></li>
+                <li><a href="{{ url_for('urunler') }}">Ürünler</a></li>
+                <li><a href="{{ url_for('iletisim') }}">İletişim</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li><a href="{{ url_for('muayene') }}">Muayene ›</a></li>
+                <li><a href="{{ url_for('asiuygulamalari') }}">Aşı Uygulamaları ›</a></li>
+                <li><a href="{{ url_for('mikrop') }}">Mikroçip Uygulaması ›</a></li>
+                <li><a href="{{ url_for('lab') }}">Laboratuvar ›</a></li>
+                <li><a href="{{ url_for('rontgen') }}">Röntgen ›</a></li>
+            </ul>
+        </div>
+
+
+
+    </div>
+    <br>
+    <div class="Başlikismi">
+        Sunduğumuz Hizmetler
+    </div>
+    <br>
+    <div class="uygulamalar" style="position: relative;">
+        <div class="content2">
+            <div class="text-container2">
+
+                <h2>Muayene</h2>
+                <p>Kliniğimizde kedi ve köpek gibi patili dostlarımızın detaylı muayeneleri yapılmaktadır.</p>
+
+                <h2>Aşı Uygulamaları</h2>
+                <p>Kliniğimizde kedi ve köpek gibi patili dostlarımızın detaylı muayeneleri yapılmaktadır.</p>
+
+
+                <h2>Mikroçip Uygulaması</h2>
+                <p>Kliniğimizde kedi ve köpek gibi patili dostlarımızın detaylı muayeneleri yapılmaktadır.</p>
+
+                <h2>Laboratuvar</h2>
+                <p>Kliniğimiz bünyesinde doğru teşhise ulaşmak adına gerekli laboratuvar hizmetimizle hematolojik,
+                    biyokimyasal, serolojik, mikrobiyolojik ve patolojik muayeneler yapılmaktadır.</p>
+
+                <h2>Röntgen</h2>
+                <p>Bilgisayarlı Röntgen (CR) ile tüm radyografik çekim ve ölçümler yapılmaktadır. Sindirim sistemi
+                    tıkanıklıklarında kontrast maddeli radyografi, kalça displazisinin erken teşhisi için penn hip
+                    yöntemiyle çekim kliniğimizde uygulanabilmektedir.</p>
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="foto-galeri">
+        <div class="foto-satir">
+            <div class="foto-cerceve">
+                <img src="static/images/ödevfotosu1.jpg" alt="Fotoğraf 1">
+            </div>
+            <div class="foto-cerceve">
+                <img src="static/images/ödevfotosu3.jpg" alt="Fotoğraf 2">
+            </div>
+        </div>
+        <div class="foto-satir">
+            <div class="foto-cerceve">
+                <img src="static/images/ödevfotosu4.jpg" alt="Fotoğraf 3">
+            </div>
+            <div class="foto-cerceve">
+                <img src="static/images/ödevfoto5.jpg" alt="Fotoğraf 4">
+            </div>
+        </div>
+        <div class="foto-satir">
+            <div class="foto-cerceve">
+                <img src="static/images/ödevfoto6.jpg" alt="Fotoğraf 5">
+            </div>
+            <div class="foto-cerceve">
+                <img src="static/images/ödevfoto7.jpg" alt="Fotoğraf 6">
+            </div>
+        </div>
+    </div>
+
+   
+    
+
+
+
+
+    <div class="vertical-line"></div>
+
+
+
+    <footer>
+        <p>Author: Erhan Küçüktopana<br>
+        <a href="mailto:hege@example.com">erhan.kucuktopana@gmail.com</a></p>
+      </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
