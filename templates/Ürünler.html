@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PatiliDükkan</title>
     <link rel="stylesheet" href="static/css/style4.css">
 </head>
-
 <body>
-
     <div class="container">
         <div class="navbar">
             <div class="logo">
@@ -28,23 +25,20 @@
             </ul>
         </div>
     </div>
-
     <div class="blogs">
         <div class="container">
-            <form id="product-form" action="{{ url_for('urunler') }}" method="POST">
-                
+            <form id="product-form" action="{{ url_for('siparis') }}" method="POST">
                 <ul class="products blog-list">
                     <li class="product">
                         <img src="static/images/ürün1.jpg" alt="Ürün 1">
                         <div class="metin">
                             <h2>Astronot Kedi Yavru Köpek Taşıma Çantası</h2>
-                            <P>Sitemizde Sadece Toptan Alışveriş Yapıldığından 2.000 TL Altındaki Siparişler
-                                Onaylanmamaktadır. Tüm Siparişlerde Taşıma Ücreti Alıcıya Aittir. Tüm Fiyatlar KDV Hariçtir.
-                                KDV, Ödeme Aşamasında Otomatik Olarak Sepetinize Eklenmektedir.</P>
+                            <p>Sitemizde Sadece Toptan Alışveriş Yapıldığından 2.000 TL Altındaki Siparişler
+                               Onaylanmamaktadır. Tüm Siparişlerde Taşıma Ücreti Alıcıya Aittir. Tüm Fiyatlar KDV Hariçtir.
+                               KDV, Ödeme Aşamasında Otomatik Olarak Sepetinize Eklenmektedir.</p>
                             <label>
                                 <input type="checkbox" name="products" value="Astronot Kedi Yavru Köpek Taşıma Çantası"> Seç
                             </label>
-                            
                             <label for="quantity_Astronot Kedi Yavru Köpek Taşıma Çantası">Miktar:</label>
                             <select id="quantity_Astronot Kedi Yavru Köpek Taşıma Çantası" name="quantity_Astronot Kedi Yavru Köpek Taşıma Çantası">
                                 <option value="1">1</option>
@@ -58,15 +52,15 @@
                     <li class="product">
                         <img src="static/images/ürün2.jpg" alt="Ürün 2">
                         <div class="metin">
-                            <h2>Astronot Kedi Yavru Köpek Taşıma Çantası</h2>
-                            <P>Sitemizde Sadece Toptan Alışveriş Yapıldığından 2.000 TL Altındaki Siparişler
-                                Onaylanmamaktadır. Tüm Siparişlerde Taşıma Ücreti Alıcıya Aittir. Tüm Fiyatlar KDV Hariçtir.
-                                KDV, Ödeme Aşamasında Otomatik Olarak Sepetinize Eklenmektedir.</P>
+                            <h2>Pet Tüy Toplama Eldiveni</h2>
+                            <p>Sitemizde Sadece Toptan Alışveriş Yapıldığından 2.000 TL Altındaki Siparişler
+                               Onaylanmamaktadır. Tüm Siparişlerde Taşıma Ücreti Alıcıya Aittir. Tüm Fiyatlar KDV Hariçtir.
+                               KDV, Ödeme Aşamasında Otomatik Olarak Sepetinize Eklenmektedir.</p>
                             <label>
-                                <input type="checkbox" name="products" value="Astronot Kedi Yavru Köpek Taşıma Çantası"> Seç
+                                <input type="checkbox" name="products" value="Pet Tüy Toplama Eldiveni"> Seç
                             </label>
-                            <label for="quantity_Astronot Kedi Yavru Köpek Taşıma Çantası">Miktar:</label>
-                            <select id="quantity_Astronot Kedi Yavru Köpek Taşıma Çantası" name="quantity_Astronot Kedi Yavru Köpek Taşıma Çantası">
+                            <label for="quantity_Pet Tüy Toplama Eldiveni">Miktar:</label>
+                            <select id="quantity_Pet Tüy Toplama Eldiveni" name="quantity_Pet Tüy Toplama Eldiveni">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -74,21 +68,19 @@
                                 <option value="5">5</option>
                             </select>
                         </div>
-
                     </li>
-
                     <li class="product">
                         <img src="static/images/ürün3.jpg" alt="Ürün 3">
                         <div class="metin">
-                            <h2>Astronot Kedi Yavru Köpek Taşıma Çantası</h2>
-                            <P>Sitemizde Sadece Toptan Alışveriş Yapıldığından 2.000 TL Altındaki Siparişler
-                                Onaylanmamaktadır. Tüm Siparişlerde Taşıma Ücreti Alıcıya Aittir. Tüm Fiyatlar KDV Hariçtir.
-                                KDV, Ödeme Aşamasında Otomatik Olarak Sepetinize Eklenmektedir.</P>
+                            <h2>Katlanabilir Kedi Tüneli</h2>
+                            <p>Sitemizde Sadece Toptan Alışveriş Yapıldığından 2.000 TL Altındaki Siparişler
+                               Onaylanmamaktadır. Tüm Siparişlerde Taşıma Ücreti Alıcıya Aittir. Tüm Fiyatlar KDV Hariçtir.
+                               KDV, Ödeme Aşamasında Otomatik Olarak Sepetinize Eklenmektedir.</p>
                             <label>
-                                <input type="checkbox" name="products" value="Astronot Kedi Yavru Köpek Taşıma Çantası"> Seç
+                                <input type="checkbox" name="products" value="Katlanabilir Kedi Tüneli"> Seç
                             </label>
-                            <label for="quantity_Astronot Kedi Yavru Köpek Taşıma Çantası">Miktar:</label>
-                            <select id="quantity_Astronot Kedi Yavru Köpek Taşıma Çantası" name="quantity_Astronot Kedi Yavru Köpek Taşıma Çantası">
+                            <label for="quantity_Katlanabilir Kedi Tüneli">Miktar:</label>
+                            <select id="quantity_Katlanabilir Kedi Tüneli" name="quantity_Katlanabilir Kedi Tüneli">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -97,20 +89,18 @@
                             </select>
                         </div>
                     </li>
-
-
                     <li class="product">
                         <img src="static/images/ürün4.jpg" alt="Ürün 4">
                         <div class="metin">
-                            <h2>Astronot Kedi Yavru Köpek Taşıma Çantası</h2>
-                            <P>Sitemizde Sadece Toptan Alışveriş Yapıldığından 2.000 TL Altındaki Siparişler
-                                Onaylanmamaktadır. Tüm Siparişlerde Taşıma Ücreti Alıcıya Aittir. Tüm Fiyatlar KDV Hariçtir.
-                                KDV, Ödeme Aşamasında Otomatik Olarak Sepetinize Eklenmektedir.</P>
+                            <h2>Otomatik Mama Kabı</h2>
+                            <p>Sitemizde Sadece Toptan Alışveriş Yapıldığından 2.000 TL Altındaki Siparişler
+                               Onaylanmamaktadır. Tüm Siparişlerde Taşıma Ücreti Alıcıya Aittir. Tüm Fiyatlar KDV Hariçtir.
+                               KDV, Ödeme Aşamasında Otomatik Olarak Sepetinize Eklenmektedir.</p>
                             <label>
-                                <input type="checkbox" name="products" value="Astronot Kedi Yavru Köpek Taşıma Çantası"> Seç
+                                <input type="checkbox" name="products" value="Otomatik Mama Kabı"> Seç
                             </label>
-                            <label for="quantity_Astronot Kedi Yavru Köpek Taşıma Çantası">Miktar:</label>
-                            <select id="quantity_Astronot Kedi Yavru Köpek Taşıma Çantası" name="quantity_Astronot Kedi Yavru Köpek Taşıma Çantası">
+                            <label for="quantity_Otomatik Mama Kabı">Miktar:</label>
+                            <select id="quantity_Otomatik Mama Kabı" name="quantity_Otomatik Mama Kabı">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -119,19 +109,18 @@
                             </select>
                         </div>
                     </li>
-
                     <li class="product">
                         <img src="static/images/ürün5.jpg" alt="Ürün 5">
                         <div class="metin">
-                            <h2>Astronot Kedi Yavru Köpek Taşıma Çantası</h2>
-                            <P>Sitemizde Sadece Toptan Alışveriş Yapıldığından 2.000 TL Altındaki Siparişler
-                                Onaylanmamaktadır. Tüm Siparişlerde Taşıma Ücreti Alıcıya Aittir. Tüm Fiyatlar KDV Hariçtir.
-                                KDV, Ödeme Aşamasında Otomatik Olarak Sepetinize Eklenmektedir.</P>
+                            <h2>Evcil Hayvan Sırt Çantası</h2>
+                            <p>Sitemizde Sadece Toptan Alışveriş Yapıldığından 2.000 TL Altındaki Siparişler
+                               Onaylanmamaktadır. Tüm Siparişlerde Taşıma Ücreti Alıcıya Aittir. Tüm Fiyatlar KDV Hariçtir.
+                               KDV, Ödeme Aşamasında Otomatik Olarak Sepetinize Eklenmektedir.</p>
                             <label>
-                                <input type="checkbox" name="products" value="Astronot Kedi Yavru Köpek Taşıma Çantası"> Seç
+                                <input type="checkbox" name="products" value="Evcil Hayvan Sırt Çantası"> Seç
                             </label>
-                            <label for="quantity_Astronot Kedi Yavru Köpek Taşıma Çantası">Miktar:</label>
-                            <select id="quantity_Astronot Kedi Yavru Köpek Taşıma Çantası" name="quantity_Astronot Kedi Yavru Köpek Taşıma Çantası">
+                            <label for="quantity_Evcil Hayvan Sırt Çantası">Miktar:</label>
+                            <select id="quantity_Evcil Hayvan Sırt Çantası" name="quantity_Evcil Hayvan Sırt Çantası">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -140,20 +129,18 @@
                             </select>
                         </div>
                     </li>
-
-
                     <li class="product">
                         <img src="static/images/ürün6.jpg" alt="Ürün 6">
                         <div class="metin">
-                            <h2>Astronot Kedi Yavru Köpek Taşıma Çantası</h2>
-                            <P>Sitemizde Sadece Toptan Alışveriş Yapıldığından 2.000 TL Altındaki Siparişler
-                                Onaylanmamaktadır. Tüm Siparişlerde Taşıma Ücreti Alıcıya Aittir. Tüm Fiyatlar KDV Hariçtir.
-                                KDV, Ödeme Aşamasında Otomatik Olarak Sepetinize Eklenmektedir.</P>
+                            <h2>Pet Bakım Seti</h2>
+                            <p>Sitemizde Sadece Toptan Alışveriş Yapıldığından 2.000 TL Altındaki Siparişler
+                               Onaylanmamaktadır. Tüm Siparişlerde Taşıma Ücreti Alıcıya Aittir. Tüm Fiyatlar KDV Hariçtir.
+                               KDV, Ödeme Aşamasında Otomatik Olarak Sepetinize Eklenmektedir.</p>
                             <label>
-                                <input type="checkbox" name="products" value="Astronot Kedi Yavru Köpek Taşıma Çantası"> Seç
+                                <input type="checkbox" name="products" value="Pet Bakım Seti"> Seç
                             </label>
-                            <label for="quantity_Astronot Kedi Yavru Köpek Taşıma Çantası">Miktar:</label>
-                            <select id="quantity_Astronot Kedi Yavru Köpek Taşıma Çantası" name="quantity_Astronot Kedi Yavru Köpek Taşıma Çantası">
+                            <label for="quantity_Pet Bakım Seti">Miktar:</label>
+                            <select id="quantity_Pet Bakım Seti" name="quantity_Pet Bakım Seti">
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -162,56 +149,9 @@
                             </select>
                         </div>
                     </li>
-
-
-                    <li class="product">
-                        <img src="static/images/ürün7.jpg" alt="Ürün 7">
-                        <div class="metin">
-                            <h2>Astronot Kedi Yavru Köpek Taşıma Çantası</h2>
-                            <P>Sitemizde Sadece Toptan Alışveriş Yapıldığından 2.000 TL Altındaki Siparişler
-                                Onaylanmamaktadır. Tüm Siparişlerde Taşıma Ücreti Alıcıya Aittir. Tüm Fiyatlar KDV Hariçtir.
-                                KDV, Ödeme Aşamasında Otomatik Olarak Sepetinize Eklenmektedir.</P>
-                            <label>
-                                <input type="checkbox" name="products" value="Astronot Kedi Yavru Köpek Taşıma Çantası"> Seç
-                            </label>
-                            <label for="quantity_Astronot Kedi Yavru Köpek Taşıma Çantası">Miktar:</label>
-                            <select id="quantity_Astronot Kedi Yavru Köpek Taşıma Çantası" name="quantity_Astronot Kedi Yavru Köpek Taşıma Çantası">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                            </select>
-                        </div>
-                    </li>
-
-                    <li class="product">
-                        <img src="static/images/ürün8.jpg" alt="Ürün 8">
-                        <div class="metin">
-                            <h2>Astronot Kedi Yavru Köpek Taşıma Çantası</h2>
-                            <P>Sitemizde Sadece Toptan Alışveriş Yapıldığından 2.000 TL Altındaki Siparişler
-                                Onaylanmamaktadır. Tüm Siparişlerde Taşıma Ücreti Alıcıya Aittir. Tüm Fiyatlar KDV Hariçtir.
-                                KDV, Ödeme Aşamasında Otomatik Olarak Sepetinize Eklenmektedir.</P>
-                            <label>
-                                <input type="checkbox" name="products" value="Astronot Kedi Yavru Köpek Taşıma Çantası"> Seç
-                            </label>
-                            <label for="quantity_Astronot Kedi Yavru Köpek Taşıma Çantası">Miktar:</label>
-                            <select id="quantity_Astronot Kedi Yavru Köpek Taşıma Çantası" name="quantity_Astronot Kedi Yavru Köpek Taşıma Çantası">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                            </select>
-                        </div>
-                    </li>
-                
                 </ul>
-                <button type="submit">Devam</button>
+                <button type="submit">Sipariş Ver</button>
             </form>
         </div>
     </div>
-
 </body>
-
-</html>

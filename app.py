@@ -22,33 +22,35 @@ def iletisim():
         return f"Email: {email}, Message: {message}"
     return render_template('iletişim.html')
 
-@app.route('/urunler', methods=["GET", "POST"])
+@app.route('/urunler', methods=['GET', 'POST'])
 def urunler():
-    if request.method == "POST":
-        selected_products = request.form.getlist('products')
-        quantities = {product: request.form[f'quantity_{product}'] for product in selected_products}
-        return render_template('siparis.html', selected_products=quantities)
+    if request.method == 'POST':
+        selected_products = {}
+        for key, value in request.form.items():
+            if key.startswith('quantity_') and value != '0':
+                product_name = key[len('quantity_'):]
+                selected_products[product_name] = value
+        return redirect(url_for('siparis', selected_products=selected_products))
     return render_template('Ürünler.html')
 
-@app.route('/siparis', methods=["POST"])
+@app.route('/siparis', methods=['GET', 'POST'])
 def siparis():
-    name = request.form.get('name')
-    email = request.form.get('email')
-    address = request.form.get('address')
-    credit_card = request.form.get('credit-card')
-    cvv = request.form.get('cvv')
-    expiry = request.form.get('expiry')
-
-    # Sipariş bilgilerini burada işleyebilirsiniz, veritabanına kaydedebilirsiniz vb.
-    print(f"Ad Soyad: {name}")
-    print(f"Email: {email}")
-    print(f"Adres: {address}")
-    print(f"Kredi Kartı: {credit_card}")
-    print(f"CVV: {cvv}")
-    print(f"Son Kullanma Tarihi: {expiry}")
+    if request.method == 'POST':
+        # Process the order form submission
+        name = request.form['name']
+        email = request.form['email']
+        address = request.form['address']
+        credit_card = request.form['credit-card']
+        cvv = request.form['cvv']
+        expiry = request.form['expiry']
+        # Here you would typically save the order to a database or send it via email
+        return "Siparişiniz alındı! Teşekkür ederiz."
     
-    return "Siparişiniz alındı"
-
+    selected_products = request.args.get('selected_products', {})
+    if isinstance(selected_products, str):
+        import json
+        selected_products = json.loads(selected_products)
+    return render_template('siparis.html', selected_products=selected_products)
 @app.route("/muayene")
 def muayene():
     return render_template("muayene.html")
