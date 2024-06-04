@@ -1,6 +1,17 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for,render_template_string
 
 app = Flask(__name__)
+
+products = [
+    {"name": "Ürün 1", "price": 10.0, "quantity": 100, "image": "static/images/urun1.jpg"},
+    {"name": "Ürün 2", "price": 20.0, "quantity": 50, "image": "static/images/urun2.jpg"},
+    {"name": "Ürün 3", "price": 15.0, "quantity": 75, "image": "static/images/urun3.jpg"},
+    {"name": "Ürün 4", "price": 30.0, "quantity": 60, "image": "static/images/urun4.jpg"},
+    {"name": "Ürün 5", "price": 25.0, "quantity": 80, "image": "static/images/urun5.jpg"},
+    {"name": "Ürün 6", "price": 35.0, "quantity": 40, "image": "static/images/urun6.jpg"},
+    {"name": "Ürün 7", "price": 40.0, "quantity": 30, "image": "static/images/urun7.jpg"},
+    {"name": "Ürün 8", "price": 50.0, "quantity": 20, "image": "static/images/urun8.jpg"}
+]
 
 @app.route('/')
 def index():
@@ -26,7 +37,7 @@ def iletisim():
 def urunler():
     if request.method == 'POST':
         selected_products = {}
-        for key, value in request.form.items():
+        for key, value in request.form.get.items():
             if key.startswith('quantity_') and value != '0':
                 product_name = key[len('quantity_'):]
                 selected_products[product_name] = value
@@ -36,15 +47,11 @@ def urunler():
 @app.route('/siparis', methods=['GET', 'POST'])
 def siparis():
     if request.method == 'POST':
-        # Process the order form submission
-        name = request.form['name']
-        email = request.form['email']
-        address = request.form['address']
-        credit_card = request.form['credit-card']
-        cvv = request.form['cvv']
-        expiry = request.form['expiry']
-        # Here you would typically save the order to a database or send it via email
-        return "Siparişiniz alındı! Teşekkür ederiz."
+        
+        return "Siparişinizi alındı"
+    
+    return render_template('siparis.html', products=products)
+
     
     selected_products = request.args.get('selected_products', {})
     if isinstance(selected_products, str):

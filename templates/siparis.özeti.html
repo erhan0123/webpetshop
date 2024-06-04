@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sipariş Özeti</title>
+</head>
+<body>
+    <h1>Sipariş Özeti</h1>
+    <ul>
+        {% for product in selected_products %}
+        <li>{{ product.name }} - {{ product.quantity }} adet</li>
+        {% endfor %}
+    </ul>
+    <h2>Kişisel Bilgiler</h2>
+    <p>Ad Soyad: {{ name }}</p>
+    <p>E-posta: {{ email }}</p>
+    <p>Kredi Kartı Numarası: {{ credit_card }}</p>
+</body>
+</html>
