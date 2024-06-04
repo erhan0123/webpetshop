@@ -64,7 +64,7 @@ def muayene():
 
 @app.route("/rontgen")
 def rontgen():
-    return render_template("romtgen.html")
+    return render_template("rontgen.html")
 
 @app.route("/asi")
 def asiuygulamalari():
