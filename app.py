@@ -48,7 +48,7 @@ def urunler():
 def siparis():
     if request.method == 'POST':
         
-        return "Siparişinizi alındı"
+        return "Siparişinizi Alınmıştır... İyi Günlerde Kullanınız."
     
     return render_template('siparis.html', products=products)
 
